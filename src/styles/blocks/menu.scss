@@ -1,0 +1,127 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+.menu {
+  position: fixed;
+  z-index: 1;
+  inset: 0;
+  transform: translateX(-100%);
+
+  overflow: auto;
+
+  min-height: 100vh;
+
+  background-color: variables.$color-accent;
+
+  transition: transform 1s;
+
+  &--open {
+    transform: translateX(0);
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__top {
+    @include mixins.top-actions;
+
+    margin-bottom: 40px;
+
+    @include mixins.on-desktop {
+      margin-bottom: 55px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 32px;
+
+    @include mixins.on-desktop {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__item {
+    width: max-content;
+  }
+
+  &__link {
+    position: relative;
+
+    display: inline-block;
+
+    padding-block: 8px;
+
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1;
+    color: variables.$color-primary;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    &::after {
+      @include mixins.menu-slider;
+
+      transform-origin: bottom left;
+      transform: scaleX(0);
+      transition: transform 0.5s;
+    }
+
+    &:hover::after {
+      transform-origin: bottom left;
+      transform: scaleX(1);
+    }
+  }
+
+  &__call {
+    display: flex;
+    flex-direction: column;
+
+    width: max-content;
+
+    font-weight: bold;
+    color: variables.$color-primary;
+    text-transform: uppercase;
+
+    &--primary {
+      margin-bottom: 8px;
+    }
+
+    &--secondary {
+      margin-bottom: 16px;
+    }
+
+    &--action {
+      position: relative;
+
+      padding-bottom: 8px;
+
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 16px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+
+      &::after {
+        @include mixins.menu-slider;
+
+        transform: scaleX(0);
+        transition: transform 0.5s;
+      }
+
+      &:hover::after {
+        transform-origin: bottom left;
+        transform: scaleX(1);
+      }
+    }
+  }
+}

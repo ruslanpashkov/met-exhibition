@@ -1,0 +1,8 @@
+{
+  "eslint.validate": ["javascript"],
+  "stylelint.validate": ["scss"],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": null
+  }
+}

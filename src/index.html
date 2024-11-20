@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The MET</title>
+
+    <meta name="description" content="The Metropolitan Museum of Art is one of the world's largest and finest art museums. Its collection includes more than two million works of art spanning five thousand years of world culture, from prehistory to the present and from every part of the globe.">
+
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="The MET">
+    <meta property="og:url" content="https://met-museum-landing.netlify.app">
+    <meta property="og:title" content="The Metropolitan Museum of Art">
+    <meta property="og:description" content="The Metropolitan Museum of Art is one of the world's largest and finest art museums. Its collection includes more than two million works of art spanning five thousand years of world culture, from prehistory to the present and from every part of the globe.">
+    <meta property="og:image" content="https://met-museum-landing.netlify.app/assets/images/_og.png">
+    <meta property="og:image:alt" content="The MET logo in white text on a bold red background featuring 'WELCOME TO THE MET' prominently displayed above 'THE METROPOLITAN MUSEUM OF ART' in a classic serif typeface">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <link type="image/svg+xml" href="/favicon.svg" rel="icon">
+    <link href="/favicon.ico" rel="shortcut icon">
+    <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="/site.webmanifest" rel="manifest">
+
+    <link type="font/woff2" href="/assets/fonts/Cinzel-Bold.woff2" rel="preload" as="font" crossorigin>
+    <link type="image/webp" href="/assets/images/mobile/header.webp" rel="preload" as="image" media="(max-width: 767px)">
+    <link type="image/webp" href="/assets/images/tablet/header.webp" rel="preload" as="image" media="(max-width: 1023px)">
+    <link type="image/webp" href="/assets/images/desktop/header.webp" rel="preload" as="image" media="(min-width: 1024px)">
+
+    <link href="/styles/main.scss" rel="stylesheet">
+  </head>
+
+  <body class="page__content">
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <a class="logo" href="/" aria-label="Home">
+            <svg class="logo__image" aria-label="The Metropolitan Museum of Art logo">
+              <use
+                href="/assets/icons.svg#logo"
+                width="100%"
+                height="100%"
+                aria-hidden="true"
+              />
+            </svg>
+          </a>
+
+          <div class="header__buttons">
+            <button
+              class="icon icon--phone"
+              type="button"
+              aria-haspopup="true"
+              tabindex="-1"
+            >
+              <svg class="icon__image" aria-label="Call Us">
+                <use
+                  href="/assets/icons.svg#phone"
+                  width="100%"
+                  height="100%"
+                  aria-hidden="true"
+                />
+              </svg>
+            </button>
+
+            <div class="icon__tooltip" role="dialog" aria-label="Call Us">
+              <a class="icon__info" href="tel:+12125357710">
+                <span>The Met Fifth Avenue</span>
+                <span>+1 212-535-7710</span>
+              </a>
+
+              <a class="icon__info" href="tel:+12129233700">
+                <span>The Met Cloisters</span>
+                <span>+1 212-923-3700</span>
+              </a>
+            </div>
+
+            <button
+              class="icon icon--menu"
+              id="menu-open"
+              aria-label="Open menu"
+              aria-expanded="false"
+              aria-controls="menu"
+            >
+              <svg class="icon__image" aria-label="Open menu">
+                <use
+                  href="/assets/icons.svg#menu"
+                  width="100%"
+                  height="100%"
+                  aria-hidden="true"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <h1 class="header__title">
+          <span>Welcome</span>
+          <span>to The MET</span>
+        </h1>
+      </div>
+    </header>
+
+    <nav class="menu" id="menu" aria-label="Main menu">
+      <div class="container">
+        <div class="menu__wrapper">
+          <div class="menu__top">
+            <a class="logo" href="/" aria-label="Home">
+              <svg class="logo__image" aria-label="The Metropolitan Museum of Art logo">
+                <use
+                  href="/assets/icons.svg#logo"
+                  width="100%"
+                  height="100%"
+                  aria-hidden="true"
+                />
+              </svg>
+            </a>
+
+            <div class="menu__buttons">
+              <button
+                class="icon icon--close"
+                id="menu-close"
+                aria-label="Close menu"
+              >
+                <svg class="icon__image" aria-label="Close menu">
+                  <use
+                    href="/assets/icons.svg#close"
+                    width="100%"
+                    height="100%"
+                    aria-hidden="true"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="/">
+                Home
+              </a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="#museum-hours">
+                Museum Hours
+              </a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="#now-on-view">
+                Now on View
+              </a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="#explore-online">
+                Explore Online
+              </a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="#contacts">
+                Contacts
+              </a>
+            </li>
+          </ul>
+
+          <a class="menu__call menu__call--primary" href="tel:+12125357710">
+            <span>The Met Fifth Avenue</span>
+            <span>+1 212-535-7710</span>
+          </a>
+
+          <a class="menu__call menu__call--secondary" href="tel:+12129233700">
+            <span>The Met Cloisters</span>
+            <span>+1 212-923-3700</span>
+          </a>
+
+          <a class="menu__call menu__call--action" href="tel:+12125357710">
+            call to order
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main">
+      <section class="main__section" id="museum-hours">
+        <div class="container">
+          <div class="museum-hours">
+            <div class="grid">
+              <div class="grid__item grid__item--tablet--1-3 grid__item--desktop--1-5">
+                <strong class="museum-hours__subtitle" data-aos="fade-right">
+                  Plan your visit
+                </strong>
+
+                <h2 class="museum-hours__title" data-aos="zoom-in">
+                  Museum hours
+                </h2>
+              </div>
+
+              <div class="grid__item grid__item--tablet--4-6 grid__item--desktop--6-12">
+                <div class="museum-hours__schedule" data-aos="fade-left">
+                  <section>
+                    <h3 class="museum-hours__place">
+                      The Met Fifth Avenue
+                    </h3>
+
+                    <div class="museum-hours__time-section">
+                      <ul class="museum-hours__times">
+                        <li>10 am - 5 pm</li>
+                        <li>10 am - 9 pm</li>
+                        <li>Closed</li>
+                      </ul>
+
+                      <ul class="museum-hours__days">
+                        <li>Sun, Mon, Tue, Thu</li>
+                        <li>Fri, Sat</li>
+                        <li>Wed</li>
+                      </ul>
+                    </div>
+
+                    <div class="museum-hours__closed-on">
+                      <span class="museum-hours__closed-on-title">
+                        Closed on
+                      </span>
+
+                      <span>
+                        Thanksgiving Day, Dec 25, Jan 1, and the first Monday in May.
+                      </span>
+                    </div>
+                  </section>
+
+                  <section>
+                    <h3 class="museum-hours__place">
+                      The Met Cloisters
+                    </h3>
+
+                    <div class="museum-hours__time-section">
+                      <ul class="museum-hours__times">
+                        <li>10 am – 4.30 pm</li>
+                        <li>Closed</li>
+                      </ul>
+
+                      <ul class="museum-hours__days">
+                        <li>Thu - Tue</li>
+                        <li>Wed</li>
+                      </ul>
+                    </div>
+
+                    <div class="museum-hours__closed-on">
+                      <span class="museum-hours__closed-on-title">
+                        Closed on
+                      </span>
+
+                      <span>
+                        Thanksgiving Day, Dec 25, Jan 1
+                      </span>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__section" id="now-on-view">
+        <div class="container">
+          <h2 class="main__section-title" data-aos="zoom-in">
+            Now On View
+          </h2>
+
+          <strong class="main__section-subtitle" data-aos="zoom-in">
+            Explore exhibition gallery guides, videos, articles, and more.
+          </strong>
+
+          <ul class="now-on-view">
+            <li class="now-on-view__section">
+              <article>
+                <div class="now-on-view__photos">
+                  <div class="grid grid--mobile">
+                    <div class="grid__item grid--mobile--1 grid__item--tablet--1-4 grid__item--desktop--1-8">
+                      <div
+                        class="now-on-view__photo-container now-on-view__photo-container--first"
+                        data-aos="fade-right"
+                        data-aos-delay="300"
+                      >
+                        <img
+                          class="now-on-view__photo now-on-view__photo--first"
+                          src="/assets/images/new-look-old-masters-exhibition-banner.jpg"
+                          alt="Exhibition banner titled 'A New Look at Old Masters: The Collection of European Painting' with a grid layout showing various classical paintings including portraits, religious art, and landscapes against a dark blue-green background"
+                          srcset="/assets/images/mobile/new-look-old-masters-exhibition-banner.webp 200w,
+                                  /assets/images/tablet/new-look-old-masters-exhibition-banner.webp 525w,
+                                  /assets/images/desktop/new-look-old-masters-exhibition-banner.webp 693w"
+                          sizes="(max-width: 991px) 200px, 693px"
+                          decoding="async"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="grid__item grid--mobile--2 grid__item--tablet--5-6 grid__item--desktop--9-12">
+                      <div
+                        class="now-on-view__photo-container"
+                        data-aos="fade-left"
+                        data-aos-delay="300"
+                      >
+                        <img
+                          class="now-on-view__photo"
+                          src="/assets/images/renaissance-style-portrait-with-ruff-collar.jpg"
+                          alt="Dramatic portrait photograph of a person wearing a large white Renaissance-style ruff collar against a dark background, styled to look like a classical Dutch painting"
+                          srcset="/assets/images/mobile/renaissance-style-portrait-with-ruff-collar.webp 200w,
+                                  /assets/images/tablet/renaissance-style-portrait-with-ruff-collar.webp 250w,
+                                  /assets/images/desktop/renaissance-style-portrait-with-ruff-collar.webp 330w"
+                          sizes="(max-width: 991px) 200px, 330px"
+                          decoding="async"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <h3 class="now-on-view__title" data-aos="fade-up">
+                  <a
+                    class="now-on-view__link"
+                    href="https://www.metmuseum.org/exhibitions/listings/2020/a-new-look-at-old-masters"
+                    target="_blank"
+                  >
+                    A New Look at Old Masters
+                  </a>
+
+                  <span>
+                    <time datetime="2020-12-12">December 12, 2020</time>
+                    –
+                    <time datetime="2023-05-31">Through Spring 2023</time>
+                  </span>
+                </h3>
+              </article>
+            </li>
+
+            <li class="now-on-view__section">
+              <article>
+                <div class="now-on-view__photos">
+                  <div class="grid grid--mobile">
+                    <div class="grid__item grid--mobile--1 grid__item--tablet--1-3 grid__item--desktop--1-4">
+                      <div
+                        class="now-on-view__photo-container"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                      >
+                        <img
+                          class="now-on-view__photo"
+                          src="/assets/images/seated-buddha-meditation-painting.jpg"
+                          alt="Ancient Buddhist painting showing a seated Buddha figure in meditation pose against a red circular background, with the figure making a mudra hand gesture"
+                          srcset="/assets/images/mobile/seated-buddha-meditation-painting.webp 200w,
+                                  /assets/images/tablet/seated-buddha-meditation-painting.webp 250w,
+                                  /assets/images/desktop/seated-buddha-meditation-painting.webp 330w"
+                          sizes="(max-width: 991px) 200px, 330px"
+                          decoding="async"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="grid__item grid--mobile--2 grid__item--tablet--4-6 grid__item--desktop--5-8">
+                      <div
+                        class="now-on-view__photo-container"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                      >
+                        <img
+                          class="now-on-view__photo"
+                          src="/assets/images/tibetan-buddhist-mandala-red.jpg"
+                          alt="Tibetan Buddhist mandala artwork featuring a circular design with geometric patterns in red and blue, containing multiple Buddha figures and deities arranged in a symmetrical pattern with ornate decorative borders"
+                          srcset="/assets/images/mobile/tibetan-buddhist-mandala-red.webp 200w,
+                                  /assets/images/tablet/tibetan-buddhist-mandala-red.webp 250w,
+                                  /assets/images/desktop/tibetan-buddhist-mandala-red.webp 330w"
+                          sizes="(max-width: 991px) 200px, 330px"
+                          decoding="async"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="now-on-view__extra grid__item grid__item--desktop--9-12">
+                      <div
+                        class="now-on-view__photo-container"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                      >
+                        <img
+                          class="now-on-view__photo"
+                          src="/assets/images/wrathful-deity-tibetan-thangka.jpg"
+                          alt="Traditional Tibetan thangka painting featuring a central wrathful deity in dark blue with multiple arms, surrounded by ornate decorative elements, smaller Buddhist figures, and symbolic imagery in gold, red, and other rich colors"
+                          srcset="/assets/images/mobile/wrathful-deity-tibetan-thangka.webp 200w,
+                                  /assets/images/tablet/wrathful-deity-tibetan-thangka.webp 250w,
+                                  /assets/images/desktop/wrathful-deity-tibetan-thangka.webp 330w"
+                          sizes="(max-width: 991px) 200px, 330px"
+                          decoding="async"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <h3 class="now-on-view__title" data-aos="fade-up">
+                  <a
+                    class="now-on-view__link"
+                    href="https://www.metmuseum.org/exhibitions/listings/2021/bodhisattvas-wisdom-compassion-power"
+                    target="_blank"
+                  >
+                    Bodhisattvas of Wisdom, Compassion, and Power
+                  </a>
+
+                  <span>
+                    <time datetime="2021-03-27">March 27, 2021</time>
+                    –
+                    <time datetime="2022-10-30">October 30, 2022</time>
+                  </span>
+                </h3>
+              </article>
+            </li>
+
+            <li class="now-on-view__section">
+              <article>
+                <div class="now-on-view__photos">
+                  <div class="grid grid--mobile">
+                    <div class="grid__item grid--mobile--1 grid__item--tablet--1-2 grid__item--desktop--1-4">
+                      <div
+                        class="now-on-view__photo-container"
+                        data-aos="fade-right"
+                        data-aos-delay="300"
+                      >
+                        <img
+                          class="now-on-view__photo"
+                          src="/assets/images/ornate-antique-clocks-museum-display.jpg"
+                          alt="Museum display of three ornate antique clocks against a dark purple wall. The center piece is a tall grandfather clock with elaborate gold decorations, flanked by two smaller ornamental wall clocks with baroque-style golden frames"
+                          srcset="/assets/images/mobile/ornate-antique-clocks-museum-display.webp 200w,
+                                  /assets/images/tablet/ornate-antique-clocks-museum-display.webp 250w,
+                                  /assets/images/desktop/ornate-antique-clocks-museum-display.webp 330w"
+                          sizes="(max-width: 991px) 200px, 330px"
+                          decoding="async"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="grid__item grid--mobile--2 grid__item--tablet--3-6 grid__item--desktop--5-12">
+                      <div
+                        class="now-on-view__photo-container now-on-view__photo-container--last"
+                        data-aos="fade-left"
+                        data-aos-delay="300"
+                      >
+                        <img
+                          class="now-on-view__photo now-on-view__photo--last"
+                          src="/assets/images/rococo-porcelain-dancing-figures.jpg"
+                          alt="Museum display of two 18th-century porcelain figurines in dancing poses. Both figures wear elaborate white rococo-style costumes with pink trim and floral details. One appears to be a male figure in motion, the other a female figure in a full dress with a small crown"
+                          srcset="/assets/images/mobile/rococo-porcelain-dancing-figures.webp 200w,
+                                  /assets/images/tablet/rococo-porcelain-dancing-figures.webp 525w,
+                                  /assets/images/desktop/rococo-porcelain-dancing-figures.webp 693w"
+                          sizes="(max-width: 991px) 200px, 693px"
+                          decoding="async"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <h3 class="now-on-view__title" data-aos="fade-up">
+                  <a
+                    class="now-on-view__link"
+                    href="https://www.metmuseum.org/exhibitions/listings/2021/inspiring-walt-disney"
+                    target="_blank"
+                  >
+                    Inspiring Walt Disney: The Animation of French Decorative Arts
+                  </a>
+
+                  <span>
+                    <time datetime="2021-12-10">December 10, 2021</time>
+                    –
+                    <time datetime="2022-03-06">March 6, 2022</time>
+                  </span>
+                </h3>
+              </article>
+            </li>
+          </ul>
+
+          <div class="grid" data-aos="zoom-in-up">
+            <a
+              class="button grid__item grid__item--tablet--2-5 grid__item--desktop--5-8"
+              href="https://www.metmuseum.org/exhibitions/"
+              target="_blank"
+            >
+              View all exhibitions
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__section" id="explore-online">
+        <div class="container">
+          <h2 class="main__section-title" data-aos="zoom-in">
+            More to Explore Online
+          </h2>
+
+          <div class="explore-online">
+            <ul class="grid">
+              <li class="grid__item grid__item--tablet--2-5 grid__item--desktop--1-4">
+                <article class="explore-online__card">
+                  <div class="explore-online__photo-container" data-aos="fade-up">
+                    <img
+                      class="explore-online__photo"
+                      src="/assets/images/avant-garde-fashion-mannequins-display.jpg"
+                      alt="Fashion exhibition display showing three mannequins wearing avant-garde dresses with metallic and green accents against a blue-lit background. The dresses are short with structured designs and the mannequins are posed dramatically on high heels"
+                      srcset="/assets/images/mobile/avant-garde-fashion-mannequins-display.webp 350w,
+                              /assets/images/tablet/avant-garde-fashion-mannequins-display.webp 500w,
+                              /assets/images/desktop/avant-garde-fashion-mannequins-display.webp 330w"
+                      sizes="(max-width: 991px) 350px, 330px"
+                      decoding="async"
+                    />
+                  </div>
+
+                  <h3 class="explore-online__title" data-aos="fade-up">
+                    Collection Areas
+                  </h3>
+
+                  <p class="explore-online__description" data-aos="fade-up">
+                    These collection areas study, exhibit, and care for the objects in The Met collection.
+                  </p>
+                </article>
+              </li>
+
+              <li class="grid__item grid__item--tablet--2-5 grid__item--desktop--5-8">
+                <article class="explore-online__card">
+                  <div class="explore-online__photo-container" data-aos="fade-up">
+                    <img
+                      class="explore-online__photo"
+                      src="/assets/images/ancient-egyptian-pharaoh-statues.jpg"
+                      alt="Close-up photograph of ancient Egyptian statues illuminated in warm lighting against a black background. The image shows multiple pharaonic busts with characteristic headdresses, focusing on their facial profiles and traditional ancient Egyptian sculptural style"
+                      srcset="/assets/images/mobile/ancient-egyptian-pharaoh-statues.webp 350w,
+                              /assets/images/tablet/ancient-egyptian-pharaoh-statues.webp 500w,
+                              /assets/images/desktop/ancient-egyptian-pharaoh-statues.webp 330w"
+                      sizes="(max-width: 991px) 350px, 330px"
+                      decoding="async"
+                    />
+                  </div>
+
+                  <h3 class="explore-online__title" data-aos="fade-up">
+                    Travel
+                  </h3>
+
+                  <p class="explore-online__description" data-aos="fade-up">
+                    Travel with The Met connects the Museum's wide and diverse audience to art, inspiration, and historical perspective.
+                  </p>
+                </article>
+              </li>
+
+              <li class="grid__item grid__item--tablet--2-5 grid__item--desktop--9-12">
+                <article class="explore-online__card">
+                  <div class="explore-online__photo-container" data-aos="fade-up">
+                    <img
+                      class="explore-online__photo"
+                      src="/assets/images/museum-viewers-baroque-painting.jpg"
+                      alt="Museum scene showing two silhouetted figures viewing a large ornately framed classical painting. The painting appears to be a Baroque-style scene with multiple figures in red clothing, and is dramatically lit against turquoise walls. The viewers are shown in complete shadow against the illuminated artwork"
+                      srcset="/assets/images/mobile/museum-viewers-baroque-painting.webp 350w,
+                              /assets/images/tablet/museum-viewers-baroque-painting.webp 500w,
+                              /assets/images/desktop/museum-viewers-baroque-painting.webp 330w"
+                      sizes="(max-width: 991px) 350px, 330px"
+                      decoding="async"
+                    />
+                  </div>
+
+                  <h3 class="explore-online__title" data-aos="fade-up">
+                    Virtual group tours
+                  </h3>
+
+                  <p class="explore-online__description" data-aos="fade-up">
+                    Request a guided tour, reserve admission and lead your own small group, or request a live virtual tour led by a Museum guide.
+                  </p>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__section" id="contacts">
+        <div class="container">
+          <h2 class="main__section-title" data-aos="zoom-in">
+            Contact us
+          </h2>
+
+          <div class="contact-us">
+            <div class="grid">
+              <div class="grid__item grid__item--tablet--1-3 grid__item--desktop--1-3">
+                <section class="contact-us__info" data-aos="fade-right">
+                  <h3 class="contact-us__place">
+                    The Met Fifth Avenue
+                  </h3>
+
+                  <section class="contact-us__section">
+                    <h4>Phone</h4>
+
+                    <a class="contact-us__link" href="tel:+12125357710">
+                      +1 212-535-7710
+                    </a>
+                  </section>
+
+                  <section class="contact-us__section">
+                    <h4>Address</h4>
+
+                    <a
+                      class="contact-us__link"
+                      href="https://goo.gl/maps/vfKYEJGgTuVG2G1X8"
+                      target="_blank"
+                    >
+                      <span>1000 Fifth Avenue</span>
+                      <span>New York, NY 10028</span>
+                    </a>
+                  </section>
+                </section>
+              </div>
+
+              <div class="grid__item grid__item--tablet--1-3 grid__item--desktop--4-6">
+                <section class="contact-us__info" data-aos="fade-right">
+                  <h3 class="contact-us__place">
+                    The Met Cloisters
+                  </h3>
+
+                  <section class="contact-us__section">
+                    <h4>Phone</h4>
+
+                    <a class="contact-us__link" href="tel:+12129233700">
+                      +1 212-923-3700
+                    </a>
+                  </section>
+
+                  <section class="contact-us__section">
+                    <h4>Address</h4>
+
+                    <a
+                      class="contact-us__link"
+                      href="https://goo.gl/maps/aGev1MieyfHAGKVB9"
+                      target="_blank"
+                    >
+                      <span>99 Margaret Corbin Drive</span>
+                      <span>Fort Tryon Park</span>
+                      <span>New York, NY 10040</span>
+                    </a>
+                  </section>
+                </section>
+              </div>
+
+              <div class="grid__item grid__item--tablet--4-6 grid__item--desktop--8-12">
+                <form id="contact-us-form" action="/" method="post">
+                  <div data-aos="fade-left">
+                    <input
+                      class="contact-us__input"
+                      name="name"
+                      type="text"
+                      placeholder="Name"
+                      autocomplete="given-name"
+                      maxlength="32"
+                      required
+                      aria-label="Name"
+                    />
+                  </div>
+
+                  <div data-aos="fade-left">
+                    <input
+                      class="contact-us__input"
+                      name="email"
+                      type="email"
+                      placeholder="Email"
+                      autocomplete="email"
+                      maxlength="255"
+                      required
+                      aria-label="Email"
+                    />
+                  </div>
+
+                  <div data-aos="fade-left">
+                    <textarea
+                      class="contact-us__input contact-us__input--textarea"
+                      name="message"
+                      cols="30"
+                      rows="3"
+                      placeholder="Message"
+                      autocomplete="off"
+                      maxlength="255"
+                      required
+                      aria-label="Message"
+                   ></textarea>
+                  </div>
+
+                  <div data-aos="fade-up">
+                    <button class="button" type="submit">
+                      Send
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="sr-only">
+        &copy; 2024 The Metropolitan Museum of Art. Content licensed under CC BY 4.0. Source code licensed under MIT.
+      </p>
+    </footer>
+
+    <script src="/scripts/index.js" type="module"></script>
+  </body>
+</html>

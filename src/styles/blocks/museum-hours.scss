@@ -1,0 +1,59 @@
+@use "../utils/variables";
+
+.museum-hours {
+  &__title {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  &__subtitle {
+    display: block;
+
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.4;
+    color: variables.$color-accent;
+  }
+
+  &__schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__place {
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+  }
+
+  &__time-section {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 16px;
+  }
+
+  &__times {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-weight: bold;
+  }
+
+  &__days {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__closed-on {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__closed-on-title {
+    font-weight: bold;
+  }
+}

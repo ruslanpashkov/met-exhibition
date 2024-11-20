@@ -1,0 +1,70 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+.header {
+  will-change: transform;
+  content-visibility: auto;
+  contain-intrinsic-size: 100vh;
+
+  position: relative;
+
+  height: 100vh;
+
+  background-color: variables.$color-secondary;
+  background-image: url("/assets/images/mobile/header.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include mixins.on-tablet {
+    background-image: url("/assets/images/tablet/header.webp");
+  }
+
+  @include mixins.on-desktop {
+    background-image: url("/assets/images/desktop/header.webp");
+  }
+
+  &__top {
+    @include mixins.top-actions;
+
+    will-change: opacity;
+    width: 100%;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 30px;
+
+    @include mixins.on-tablet {
+      gap: 64px;
+    }
+  }
+
+  &__title {
+    will-change: transform;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+
+    contain: layout style;
+    display: flex;
+    flex-direction: column;
+
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1;
+    color: variables.$color-primary;
+    text-align: center;
+    white-space: nowrap;
+
+    @include mixins.on-tablet {
+      font-size: 60px;
+    }
+
+    @include mixins.on-desktop {
+      font-size: 80px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@use "../utils/variables";
+
+.button {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 56px;
+
+  font-weight: bold;
+  color: variables.$color-primary;
+  text-align: center;
+
+  background-color: variables.$color-accent;
+  outline: none;
+
+  transition:
+    background-color 0.5s,
+    box-shadow 0.5s;
+
+  &:hover {
+    background-color: variables.$color-button-hover;
+  }
+
+  &:focus {
+    box-shadow: inset 0 0 14px 0 rgb(0 0 0 / 30%);
+  }
+
+  &:active {
+    background-color: variables.$color-button-pressed;
+  }
+}

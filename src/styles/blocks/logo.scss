@@ -1,0 +1,18 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+.logo {
+  width: 64px;
+  height: 46px;
+
+  @include mixins.on-tablet {
+    width: 88px;
+    height: 64px;
+  }
+
+  &__image {
+    @include mixins.size(100%);
+
+    color: variables.$color-primary;
+  }
+}

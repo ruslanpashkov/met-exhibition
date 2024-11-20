@@ -1,0 +1,18 @@
+@use "../utils/variables";
+
+.page {
+  scroll-behavior: smooth;
+
+  font-family: Cinzel, Times, serif;
+  font-size: 16px;
+  line-height: 27px;
+  color: variables.$color-secondary;
+
+  &__content {
+    background-color: variables.$color-primary;
+
+    &--clip {
+      overflow: hidden;
+    }
+  }
+}

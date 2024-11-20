@@ -1,0 +1,8 @@
+@use "../utils/variables";
+
+:focus-visible {
+  border-radius: 2px;
+  outline: 1px solid variables.$color-primary;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px variables.$color-accent;
+}

@@ -1,0 +1,93 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+.icon {
+  @include mixins.size(18px);
+
+  cursor: pointer;
+
+  position: relative;
+
+  box-sizing: content-box;
+  padding: 8px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  @include mixins.on-tablet {
+    @include mixins.size(24px);
+  }
+
+  &--phone {
+    display: none;
+
+    @include mixins.on-desktop {
+      cursor: default;
+      display: block;
+      transition: transform 0.5s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+
+      &:hover ~ .icon__tooltip {
+        pointer-events: all;
+        opacity: 1;
+      }
+    }
+  }
+
+  &--menu,
+  &--close {
+    transition: transform 0.5s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__image {
+    @include mixins.size(100%);
+
+    color: variables.$color-primary;
+  }
+
+  &__tooltip {
+    display: none;
+
+    @include mixins.on-desktop {
+      pointer-events: none;
+
+      position: fixed;
+      transform: translate(-100%, -33.33%);
+
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      width: max-content;
+      padding-right: 20px;
+
+      opacity: 0;
+
+      transition: opacity 0.5s;
+
+      &:hover,
+      &:focus-within {
+        pointer-events: all;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+
+    font-weight: bold;
+    color: variables.$color-primary;
+    text-align: right;
+    text-transform: uppercase;
+  }
+}

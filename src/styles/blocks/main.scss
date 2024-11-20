@@ -1,0 +1,26 @@
+@use "../utils/variables";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 100px 0 50px;
+
+  &__section-title {
+    display: block;
+
+    margin-bottom: 48px;
+
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: -1.5px;
+  }
+
+  &__section-subtitle {
+    display: block;
+    margin: -40px 0 48px;
+    text-align: center;
+  }
+}
