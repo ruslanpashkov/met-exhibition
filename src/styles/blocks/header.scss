@@ -24,6 +24,11 @@
     background-image: url("/assets/images/desktop/header.webp");
   }
 
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__top {
     @include mixins.top-actions;
 
@@ -41,23 +46,17 @@
   }
 
   &__title {
-    will-change: transform;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);
-
-    contain: layout style;
     display: flex;
+    flex: 1;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     font-size: 40px;
     font-weight: bold;
     line-height: 1;
     color: variables.$color-primary;
     text-align: center;
-    white-space: nowrap;
 
     @include mixins.on-tablet {
       font-size: 60px;
