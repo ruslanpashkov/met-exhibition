@@ -1,13 +1,13 @@
 # MET Museum Landing 🏛️
 
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Made with Love](https://img.shields.io/badge/Made%20with-❤️-red.svg)](https://github.com/ruslanpashkov/met-museum-landing)
+[![Made with Love](https://img.shields.io/badge/Made%20with-❤️-red.svg)](https://github.com/ruslanpashkov/met-exhibition)
 
-A meticulously crafted landing page that captures the grandeur of the Metropolitan Museum of Art through modern web technologies, seamless animations, and thoughtful design principles.
+A meticulously crafted landing that captures the grandeur of the Metropolitan Museum of Art through modern web technologies, seamless animations, and thoughtful design principles.
 
-### [LIVE DEMO](https://ruslanpashkov.com/met-museum-landing/)
+### [LIVE DEMO](https://ruslanpashkov.com/met-exhibition/)
 
-[![Project Preview](resources/met.png)](https://ruslanpashkov.com/met-museum-landing/)
+[![Project Preview](resources/met.png)](https://ruslanpashkov.com/met-exhibition/)
 
 ## Features
 
@@ -40,13 +40,13 @@ Smooth animations and interactive elements powered by AOS library, carefully opt
 1. Clone the repository
 
 ```bash
-git clone https://github.com/ruslanpashkov/met-museum-landing.git
+git clone https://github.com/ruslanpashkov/met-exhibition.git
 ```
 
 2. Navigate to project directory
 
 ```bash
-cd met-museum-landing
+cd met-exhibition
 ```
 
 3. Install dependencies
