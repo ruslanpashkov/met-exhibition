@@ -5,7 +5,7 @@
 
 A meticulously crafted landing that captures the grandeur of the Metropolitan Museum of Art through modern web technologies, seamless animations, and thoughtful design principles.
 
-### [LIVE DEMO](https://ruslanpashkov.com/met-exhibition/)
+### [LIVE DEMO](https://ruslanpashkov.com/projects/met-exhibition/)
 
 [![Project Preview](resources/met.png)](https://ruslanpashkov.com/met-exhibition/)
 
